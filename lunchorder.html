@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+background:#d7ecff;}
+h2 {
+  background-color:#dbd5c5;
+  padding: 8px 16px;
+  text-align:center;
+}
+h2 {
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+ 
+  width:50% ;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc{
+  padding: 15px;
+  background-color:white;
+  text-align: center;
+  }
+  .order:hover{
+box-shadow:inset 5px 5px 10px rgba(0,0,0,.5),1px 1px 1px white ;
+
+}
+.previous {
+text-decoration:none;
+  background-color: #f1f1f1;
+  color: black;
+}
+li{
+padding-right:40px;
+background:#dbd5c5}
+</style>
+</head>
+<body>
+<center>
+<h2>LUNCH ORDER AREA</h2>
+<div class="gallery">
+  <a target="_self" href="C:\Users\welcome\Desktop\hotel mgmt\lunchorder.html">
+    <img src="C:\Users\welcome\Desktop\hotel mgmt\images\lunch images\Screenshot (1124).png" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">MEALS
+  <br>
+  <ul type="none">
+<li>PLATE MEALS</li><br>
+
+<li>180</li>
+<br>
+<li type="submit">how many plates u want
+<br><br>
+GIVE NUMBER:<input type="text" id="myText1" >
+<br>
+<br>
+<button class="order" onclick="order1()">ORDER ME</button>
+<p id="demo1"></p>
+</li>
+</ul>  
+</div>
+</div>
+<div class="gallery">
+  <a target="_self" href="C:\Users\welcome\Desktop\hotel mgmt\lunchorder.html">
+    <img src="C:\Users\welcome\Desktop\hotel mgmt\images\lunch images\Screenshot (1125).png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">CHAPATI
+  <br>
+  <ul type="none">
+<li>PLATE CHAPATI</li><br>
+
+<li>100</li>
+<br>
+<li type="submit" >how many plates u want
+<br><br>
+GIVE NUMBER:<input type="text" id="myText2" >
+<br>
+<br>
+<button class="order" onclick="order2()">ORDER ME</button>
+<p id="demo2"></p>
+</li>
+</ul>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_self" href="C:\Users\welcome\Desktop\hotel mgmt\lunchorder.html">
+    <img src="C:\Users\welcome\Desktop\hotel mgmt\images\lunch images\Screenshot (1126).png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">KERLA MEALS
+  <br>
+  <ul type="none">
+<li>PLATE KERLA MEALS</li><br>
+
+<li>200</li>
+<br>
+<li type="submit">how many plates u want
+<br><br>
+GIVE NUMBER:<input type="text" id="myText3" >
+<br>
+<br>
+<button class="order" onclick="order3()">ORDER ME</button>
+<p id="demo3"></p>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+</center>
+<a  target="_self" href="C:\Users\welcome\Desktop\hotel mgmt\lunch.html" class="previous">&#8249; previous</a>
+<script>
+function order1(){
+  var x = document.getElementById("myText1").value;
+  document.getElementById("demo1").innerHTML = x
+  +" PLATES IDLY ORDERED HAVE A DELICIOUS FOOD THANKYOU";
+
+}
+function order2(){
+  var x1 = document.getElementById("myText2").value;
+  document.getElementById("demo2").innerHTML = x1
+  +" PLATES IDLY ORDERED HAVE A DELICIOUS FOOD THANKYOU";
+
+}
+function order3(){
+  var x2 = document.getElementById("myText3").value;
+  document.getElementById("demo3").innerHTML = x2
+  +" PLATES IDLY ORDERED HAVE A DELICIOUS FOOD THANKYOU";
+  }
+</script>
+</body>
+</html>
